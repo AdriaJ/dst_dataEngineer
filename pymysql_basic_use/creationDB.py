@@ -7,6 +7,6 @@ connection=pymysql.connect(host='localhost', user ='root', password = 'sql')
 
 try:
 	with connection.cursor() as cursor:
-		cursor.execute('CREATE DATABASE new_database')
+		cursor.execute('CREATE DATABASE imdb')
 finally:
 	connection.close()
